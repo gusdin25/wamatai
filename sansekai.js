@@ -57,7 +57,7 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
     if (setting.autoAI) {
         if (budy) {
             try {
-            if (setting.keyopenai === 'ISI_APIKEY_OPENAI_DISINI') return reply('Apikey belum diisi\n\nSilahkan isi terlebih dahulu apikeynya di file key.json\n\nApikeynya bisa dibuat di website: https://beta.openai.com/account/api-keys')
+            if (setting.keyopenai == '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') return reply('Apikey belum diisi\n\nSilahkan isi terlebih dahulu apikeynya di file key.json\n\nApikeynya bisa dibuat di website: https://beta.openai.com/account/api-keys')
             const configuration = new Configuration({
               apiKey: setting.keyopenai, 
             });
@@ -85,7 +85,7 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
             switch(command) { 
                 case 'ai':
                     try {
-                        if (setting.keyopenai === 'ISI_APIKEY_OPENAI_DISINI') return reply('Apikey belum diisi\n\nSilahkan isi terlebih dahulu apikeynya di file key.json\n\nApikeynya bisa dibuat di website: https://beta.openai.com/account/api-keys')
+                        if (setting.keyopenai == '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') return reply('Apikey belum diisi\n\nSilahkan isi terlebih dahulu apikeynya di file key.json\n\nApikeynya bisa dibuat di website: https://beta.openai.com/account/api-keys')
                         if (!text) return reply(`Chat dengan AI.\n\nContoh:\n${prefix}${command} Apa itu resesi`)
                         const configuration = new Configuration({
                             apiKey: setting.keyopenai,
